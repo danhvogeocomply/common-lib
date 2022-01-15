@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "target": "es2018",
+      "lib": ["es2018"],
+      "noLib": false,
+      "sourceMap": false,
+      "skipLibCheck": true,
+      "removeComments": false,
+      "noImplicitAny": false,
+      "strict": true,
+      "strictNullChecks": false,
+      "esModuleInterop": true,
+      "allowJs": false,
+      "experimentalDecorators": true,  
+      "emitDecoratorMetadata": true
+    },
+    "include": ["src/*.ts"]
+}

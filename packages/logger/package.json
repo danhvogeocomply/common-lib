@@ -1,0 +1,8 @@
+{
+  "name": "@andyvo/logger",
+  "version": "0.0.1",
+  "description": "Logger library",
+  "main": "src/index.ts",
+  "author": "danh.vo@geocomply.com",
+  "license": "MIT"
+}
