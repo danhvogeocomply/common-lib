@@ -2,9 +2,13 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "format": "prettier \"**/*.ts\" --ignore-path ./.prettierignore --write && git status"
+    "dev": "lerna run dev",
+    "build": "lerna run --parallel build",
+    "format": "prettier \"**/*.ts\" --ignore-path ./.prettierignore --write && git status",
+    "publish": "lerna run tsc && lerna publish"  
   },
   "devDependencies": {
+    "@types/node": "^17.0.8",
     "@typescript-eslint/eslint-plugin": "^5.9.1",
     "@typescript-eslint/parser": "^5.9.1",
     "eslint": "^8.6.0",

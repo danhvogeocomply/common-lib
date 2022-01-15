@@ -4,5 +4,9 @@
   "description": "Logger library",
   "main": "src/index.ts",
   "author": "danh.vo@geocomply.com",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@andyvo/utils": "^0.0.1",
+    "typescript": "^4.5.4"
+  }
 }

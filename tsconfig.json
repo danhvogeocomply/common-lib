@@ -1,16 +1,28 @@
 {
     "compilerOptions": {
-        "module": "commonjs",
-        "declaration": false,
-        "noImplicitAny": false,
-        "removeComments": true,
-        "noLib": false,
-        "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
-        "target": "es6",
-        "sourceMap": true,
-        "allowJs": true,
-        "outDir": "dist",    
+      "baseUrl": ".",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "sourceMap": false,
+      "target": "es2018",
+      "lib": ["es2018"],
+      "noLib": false,
+      "skipLibCheck": true,
+      "noImplicitAny": false,
+      "noUnusedLocals": false,
+      "removeComments": true,
+      "strict": true,
+      "strictNullChecks": false,
+      "esModuleInterop": true,
+      "isolatedModules": true,
+      "allowJs": true,
+      "resolveJsonModule": true,
+      "types": ["node"],
+      "paths": {
+        "@andyvo/logger": ["./packages/logger"],
+        "@andyvo/utils": ["./packages/utils"]
+      }
     },
-    "include": ["packages/**/*"]
+    "include": ["packages/**/*"],
+    "exclude": ["node_modules"]  
 }
